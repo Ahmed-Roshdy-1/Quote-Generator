@@ -15,3 +15,44 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.quote-text {
+  font-size: 2.75rem;
+}
+
+/* js control */
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 4rem;
+}
+
+.quote-auther {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #9d0208;
+}
+
+/* Media Query : Tablet or Smaller */
+@media screen and(min-width: 500px) {
+  .quote-container {
+    margin: px;
+  }
+  .quote-text {
+    font-size: 2.5rem;
+  }
+}
