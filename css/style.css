@@ -48,9 +48,9 @@ body {
 }
 
 /* Media Query : Tablet or Smaller */
-@media screen and(min-width: 500px) {
+@media screen and (max-width: 1000px) {
   .quote-container {
-    margin: px;
+    margin: auto 10px;
   }
   .quote-text {
     font-size: 2.5rem;
