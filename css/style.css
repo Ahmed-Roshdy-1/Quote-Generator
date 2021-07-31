@@ -10,15 +10,29 @@ body {
   font-family: "Caveat", cursive, sans-serif, arial;
   color: #000;
   font-weight: 700;
+  display: grid;
   text-align: center;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  justify-items: stretch;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+h1 span {
+  color: #9d0208;
 }
 
 .quote-container {
   width: auto;
-  max-width: 900px;
+  max-width: 1200px;
   padding: 20px 30px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.15);
@@ -36,7 +50,7 @@ body {
 
 .fa-quote-left,
 .fa-quote-right {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .quote-auther {
@@ -44,7 +58,44 @@ body {
   font-size: 2rem;
   font-weight: 400;
   font-style: italic;
-  color: #9d0208;
+  color: #d00000;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: inherit;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #edf2f4;
+  background: #ef233c;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.5;
 }
 
 /* Media Query : Tablet or Smaller */
@@ -54,5 +105,9 @@ body {
   }
   .quote-text {
     font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 1.1rem;
+    font-weight: bolder;
   }
 }
