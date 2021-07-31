@@ -48,9 +48,8 @@ h1 span {
   font-size: 2rem;
 }
 
-.fa-quote-left,
-.fa-quote-right {
-  font-size: 3rem;
+.fa-quote-left {
+  font-size: 2.5rem;
 }
 
 .quote-auther {
@@ -97,6 +96,24 @@ button:active {
 .fa-twitter {
   font-size: 1.5;
 }
+.loader {
+  justify-self: center;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #ef233c; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* Media Query : Tablet or Smaller */
 @media screen and (max-width: 1000px) {
@@ -109,5 +126,9 @@ button:active {
   h1 {
     font-size: 1.1rem;
     font-weight: bolder;
+  }
+  .loader {
+    width: 60px;
+    height: 60px;
   }
 }
