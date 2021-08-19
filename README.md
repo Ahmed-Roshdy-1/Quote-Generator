@@ -1,5 +1,5 @@
 
-# Quote Generator [See a live demo of the project](https://ahmed-roshdy-1.github.io/Quote-Generator/Index)
+# Quote Generator [See a live demo of the project](https://ahmed-roshdy-1.github.io/Quote-Generator/)
 # this app Using an API to generate a random quote generator with Twitter integration.
 ## ✅ the quotes fetched from Type Fit API
 ## ✅ it is fully responsive 💢
